@@ -1,6 +1,6 @@
-simplismdeveloper.github.io
+단순주의 프로그래머
 ===========================
 
-## 단순주의 프로그래밍
-
 단순한 코드 템플릿 혹은 각종 팁을 보기쉽게 정리하여, 무료 오픈소스로 배포하는 사이트의 GitHub Page 입니다.
+
+[홈페이지로 이동](simplismdeveloper.github.io)
