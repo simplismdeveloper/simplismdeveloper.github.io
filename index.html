@@ -1,0 +1,64 @@
+---
+layout: default
+---
+
+<div class="marquee">
+  <div class="container">
+    <h1>Simplism Developer</h1>
+    <h2>무료 오픈소스 단순 코드 템플릿 및 각종 팁</h2>
+    <p>Created and Maintained by Seoklae, Kim</p>
+
+    <div style="margin-bottom: 20px;">
+      <iframe src="//ghbtns.com/github-btn.html?user={{ site.github_username }}&repo={{ site.github_repo }}&type=fork"
+              allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+      <iframe src="//ghbtns.com/github-btn.html?user={{ site.github_username}}&repo={{ site.github_repo }}&type=watch&count=true"
+              allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}" data-text="{{ site.description }}">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+
+    <div style="margin-bottom: 50px;">
+      <a href="/templates/index.html" class="btn btn-primary btn-lg">
+        <i class="fa fa-arrow-circle-right"></i> 모든 템플릿 보기
+      </a>
+    </div>
+
+      <script type="text/javascript" src="http://ad.ilikesponsorad.com/ad/ad.js?adImpMgrCode=10967&width=200&height=200"></script>
+  </div>
+</div>
+
+<div class="container">
+  <div class="text-center">
+    <h1 style="margin-bottom: 20px;">쉽게 커스터마이징할 수 있는 무료 오픈소스 템플릿</h1>
+    <p class="lead">
+      Simplism Develper는 <b>무료로 간단하게</b> 사용하실 수 있는 각종 템플릿을 제공하고있습니다.<br/>
+      모든 템플릿은 상업적 사용을 포함한 모든 용도에 오픈되어있는 <b>오픈소스</b>입니다.<br/>
+      맘에드는 것을 다운로드하고, 프로젝트를 시작해보세요.<br/>
+    </p>
+  </div>
+
+  <hr class="small"/>
+
+  <div class="row">
+    {% for page in site.pages %}
+    {% if page.type == "template"  %}
+    <div class="col col-md-4">
+      <div class="example-box">
+        <a href="{{ page.permalink }}" class="example-box-image">
+          <img src="{{ page.thumbnail }}" align="example"/>
+        </a>
+        <div class="example-box-content">
+          <h3 class="example-box-title">{{ page.title }}</h3>
+          <p>{{ page.description }}</p>
+          <a href="{{ page.permalink }}" class="btn btn-primary">
+            <i class="fa fa-angle-right"></i>
+            프리뷰 & 다운로드
+          </a>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>

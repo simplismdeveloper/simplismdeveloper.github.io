@@ -1,0 +1,102 @@
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+
+.jumbotron{
+  h1{
+    color: $headings-color;
+  }
+}
+.help-block {
+  color: darken($text-color, 20%);
+}
+
+.table{
+  > tbody > tr > th,
+  > tfoot > tr > th,
+  > tbody > tr > td,
+  > tfoot > tr > td {
+    border: none;
+  }
+
+  &-bordered > thead > tr > th,
+  &-bordered > tbody > tr > th,
+  &-bordered > tfoot > tr > th,
+  &-bordered > thead > tr > td,
+  &-bordered > tbody > tr > td,
+  &-bordered > tfoot > tr > td {
+    border: 1px solid $table-border-color;
+  }
+}
+
+.table{
+
+  > thead > tr.info > th,
+  > tbody > tr.info > th,
+  > tfoot > tr.info > th,
+  > thead > tr.info > td,
+  > tbody > tr.info > td,
+  > tfoot > tr.info > td {
+    color: white;
+  }
+
+  > thead > tr.success > th,
+  > tbody > tr.success > th,
+  > tfoot > tr.success > th,
+  > thead > tr.success > td,
+  > tbody > tr.success > td,
+  > tfoot > tr.success > td {
+    color: white;
+  }
+
+  > thead > tr.danger > th,
+  > tbody > tr.danger > th,
+  > tfoot > tr.danger > th,
+  > thead > tr.danger > td,
+  > tbody > tr.danger > td,
+  > tfoot > tr.danger > td {
+    color: white;
+  }
+
+  > thead > tr.warning > th,
+  > tbody > tr.warning > th,
+  > tfoot > tr.warning > th,
+  > thead > tr.warning > td,
+  > tbody > tr.warning > td,
+  > tfoot > tr.warning > td {
+    color: white;
+  }
+
+  > thead > tr.active > th,
+  > tbody > tr.active > th,
+  > tfoot > tr.active > th,
+  > thead > tr.active > td,
+  > tbody > tr.active > td,
+  > tfoot > tr.active > td {
+    color: white;
+  }
+
+  > thead > tr.info > th,
+  > tbody > tr.info > th,
+  > tfoot > tr.info > th,
+  > thead > tr.info > td,
+  > tbody > tr.info > td,
+  > tfoot > tr.info > td {
+    color: white;
+  }
+}
+
+.nav-tabs > li > a,
+.nav-pills > li > a {
+  color: $text-color;
+}
+
+.pager > li > a{
+  color: $text-color;
+}
+
+code{
+  font-size: 100%;
+}

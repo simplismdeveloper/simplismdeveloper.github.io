@@ -1,0 +1,30 @@
+---
+layout: page
+title: Templates
+description: 무료로 간단하게 사용하실 수 있는 각종 템플릿을 제공하고 있습니다. 자신의 프로젝트에 맞는 템플릿을 찾아보고, 손쉽게 커스터마이징 하여 사용하세요.
+---
+
+
+<div class="row">
+    {% for page in site.pages %}
+        {% if page.type == "template"  %}
+            <div class="col col-md-4">
+                <div class="example-box">
+                    <a href="{{ page.permalink }}" class="example-box-image">
+                        <img src="{{ page.thumbnail }}" align="example"/>
+                    </a>
+                    <div class="example-box-content">
+                        <h3 class="example-box-title">{{ page.title }}</h3>
+                        <p>{{ page.description }}</p>
+                        <a href="{{ page.permalink }}" class="btn btn-primary">
+                            <i class="fa fa-angle-right"></i>
+                            프리뷰 & 다운로드
+                        </a>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<hr class="small"/>

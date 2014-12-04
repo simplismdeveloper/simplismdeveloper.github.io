@@ -1,0 +1,61 @@
+---
+layout: page
+---
+
+<ol class="breadcrumb">
+    <li><a href="/index.html">Home</a></li>
+    <li><a href="/templates/index.html">Templates</a></li>
+    <li class="active">{{ page.title }}</li>
+</ol>
+
+<div class="row">
+    <div class="col-md-7">
+        <a href="{{ page.preview_url }}" class="image-box">
+            <img src="{{ page.thumbnail }}" style="width: 100%;">
+        </a>
+
+        <div style="margin-bottom: 20px;">
+            <iframe src="//ghbtns.com/github-btn.html?user={{ page.github_username }}&repo={{ page.github_repo }}&type=fork"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+            <iframe src="//ghbtns.com/github-btn.html?user={{ page.github_username }}&repo={{ page.github_repo }}&type=watch&count=true"
+                    allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+
+            <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{ page.permalink }}" data-text="{{ page.title}} - {{ page.description }}">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        <div style="margin-bottom: 70px;">
+            <a href="{{ page.preview_url }}" class="btn btn-default">
+                <i class="fa fa-eye"></i>
+                프리뷰 보기
+            </a>
+            &nbsp;
+            <a href="{{ page.download_url }}" class="btn btn-default">
+                <i class="fa fa-download"></i>
+                다운로드
+            </a>
+            &nbsp;
+            <a href="https://github.com/{{ page.github_username }}/{{ page.github_repo }}/" class="btn btn-default">
+                <i class="fa fa-github"></i>
+                소스코드 보기(on GitHub)
+            </a>
+        </div>
+
+        {% include comments.html %}
+    </div>
+
+    <div class="col-md-5">
+        <div style="margin-bottom: 20px;">
+            <script type="text/javascript" src="http://ad.ilikesponsorad.com/ad/ad.js?adImpMgrCode=10969&width=320&height=50"></script>
+        </div>
+
+        {{ content }}
+
+        <div style="margin-bottom: 20px;">
+            <h4>라이센스 및 작성자 정보</h4>
+            <ul>
+                <li><a href="{{ page.license_url }}">{{ page.license }}</a></li>
+                <li>by <a href="{{ page.author_url }}">{{ page.author }}</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

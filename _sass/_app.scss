@@ -1,0 +1,141 @@
+@import "bootstrap/bootstrap";
+@import "font-awesome/font-awesome";
+@import "theme-darcular/theme-darcular";
+
+body{
+  padding-top: $navbar-height;
+}
+
+hr.small{
+  width: 120px;
+  margin: 100px auto;
+}
+
+.navbar-brand{
+  img{
+    height: $navbar-height - 30px;
+    margin-top: -$navbar-padding-vertical + 15;
+    margin-bottom: -$navbar-padding-vertical + 15;
+    margin-right: 10px;
+    float: left;
+  }
+}
+
+.col{
+  margin-bottom: $grid-gutter-width;
+}
+
+.lead{
+  line-height: 2;
+}
+
+.marquee{
+  background: $jumbotron-bg;
+  border-top: 1px solid darken($jumbotron-bg, 5%);
+  border-bottom: 1px solid darken($jumbotron-bg, 5%);
+  padding: 150px 0 50px 0;
+  text-align: center;
+  margin-bottom: 100px;
+
+
+  h1{
+    font-size: $font-size-base*5.5;
+    padding-bottom: 10px;
+  }
+  h2{
+    padding-bottom: 10px;
+  }
+  p{
+    padding-bottom: 10px;
+    font-size: $font-size-base*1.5;
+  }
+}
+
+.btn-primary{
+  i{
+    color: $brand-primary;
+  }
+
+  &:hover{
+    background: $brand-primary;
+    border-color: $brand-primary;
+    color: $gray-darker;
+
+    i{
+      color: $gray-darker;
+    }
+  }
+}
+.btn-default{
+
+  &:hover{
+    background: $btn-default-border;
+    border-color: $btn-default-border;
+    color: $gray-darker;
+  }
+}
+
+.label-primary{
+  color: $gray-base;
+}
+
+.licensebar{
+  background: $gray-darker;
+  padding: 5px 0;
+}
+.table > thead > tr.active > th,
+.table > tbody > tr.active > th,
+.table > tfoot > tr.active > th,
+.table > thead > tr.active > td,
+.table > tbody > tr.active > td,
+.table > tfoot > tr.active > td{
+  color: $gray-base;
+}
+
+
+//-----------------------------------------------
+// Example Box
+//-----------------------------------------------
+
+.example-box{
+  background: $gray-darker;
+  padding: 10px;
+
+  .example-box-image{
+    img{
+      width: 100%;
+
+      &:hover{
+        @include opacity(.6);
+      }
+    }
+  }
+
+  .example-box-content{
+    padding: 15px 15px 30px 15px;
+    text-align: center;
+
+    .example-box-title{
+      margin-bottom: $line-height-computed;
+      color: white;
+    }
+
+    p{
+      margin-bottom: $line-height-computed;
+    }
+  }
+}
+
+.image-box{
+  display: block;
+  margin-bottom: $line-height-computed * 2;
+
+  img{
+    width: 100%;
+
+    &:hover{
+      @include opacity(.6);
+    }
+  }
+}
+
